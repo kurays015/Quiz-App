@@ -21,6 +21,7 @@ html {
   font-size: .8rem;
   position: absolute;
   right: 0;
+  top: 15px;
   background: linear-gradient(to right, #70c25c 0%, #70c25c 30%, #ffc04a 30%, #ffc04a 42.5%, #fc903d 42.5%, #fc903d 55%, #e94752 55%, #e94752 67.5%, #a954a5 67.5%, #a954a5 80%, #00afe0 80%, #00afe0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -41,8 +42,7 @@ html {
  font-weight: 600;
 }
 
-.container {
-  
+.container {  
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -74,9 +74,6 @@ p {
     flex-direction: column;
     gap: 10px;
 }
-
-
-
 label {
     display: flex;
     align-items: center;
@@ -118,6 +115,9 @@ input[type="radio"] {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+.score-result {
+  font-size: 16px; 
 }
 .modal {
   height: 300px;
