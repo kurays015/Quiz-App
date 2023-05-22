@@ -182,6 +182,9 @@ input[type="radio"] {
     padding: 10px;
     overflow: hidden;
   }
+  label {
+      margin: 5px 0px;
+    }
 }
 
 
