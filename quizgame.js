@@ -43,19 +43,9 @@ form.addEventListener('submit', e => {
     // }
   }, 15);
 
-    
-
   radioButtons.forEach( buttons => {
     buttons.checked = false;
   })
-});
-
-
-
-//pre loader --
-window.addEventListener('load', function() {
-  const loader = document.querySelector('.loader');
-  loader.classList.add('loader-hidden');
 });
 
 setTimeout(function() {
