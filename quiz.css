@@ -164,12 +164,11 @@ input[type="radio"] {
   font-weight: 600;
   background-color: #253344;
   color: #fff;
-  transition: background-color 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .modal-close-button:hover {
   background-color: #3275D9;
   cursor: pointer;
-  transition: .2s;
 }
 .image-question {
   object-fit: cover;
@@ -186,6 +185,11 @@ input[type="radio"] {
   label {
       margin: 2px 0px;
     }
+  .modal-close-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 
