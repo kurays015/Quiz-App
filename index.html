@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="preloader.css">
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="loader">
+      <div class="loader-inner"></div>
+    </div>
+    
+    <!-- Quiz Starts-->
+    <div class="container">
+
+      <!-- Score Modal -->
+        <dialog class="modal">
+          <button class="modal-close-button">x</button>
+          <div class="modal-child">  
+            <p>Congratulations!</p>
+            <p class="score-result">You got <br> <span>0%</span> <br> Great Job!</p> 
+          </div>      
+        </dialog>
+    
+      <h1 class="title" 
+      data-aos="zoom-in" 
+      data-aos-easing="linear"
+      data-aos-duration="700">Quiz App
+        <span>
+          by Christ...
+        </span>
+      </h1>
+      <form id="quizForm">
+
+        <!-- Question 1 -->
+          <div class="question">
+            <h3 data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700"
+            >Question 1:</h3>
+            <p data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700"
+            >What is the capital of France?</p>
+            <div class="options">
+            <label data-aos="fade-right"
+                  data-aos-duration="500"
+                  data-aos-easing="ease-in-sine">
+                <input type="radio" name="q1" value="A">
+                Paris
+              </label>   
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio" name="q1" value="B">
+                London
+              </label>                  
+              <label data-aos="fade-right"
+                    data-aos-duration="500"
+                    data-aos-easing="ease-in-sine">
+                <input type="radio" name="q1" value="C">
+                Rome
+              </label>               
+              <label data-aos="fade-left"
+                    data-aos-duration="500"
+                    data-aos-easing="ease-in-sine">
+                <input type="radio" name="q1" value="D">
+                Madrid
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="question">
+            <h3 data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700"
+            >Question 2:</h3>
+            <p data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700"
+            >What is the largest planet in our solar system?</p>
+            <div class="options">              
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q2" value="A" required>
+                Jupiter
+              </label>             
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q2" value="B" required>
+                Planet Namec
+              </label>                 
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio" name="q2" value="C" required>
+                Saturn
+              </label>
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q2" value="D" required>
+                Earth
+              </label>
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q2" value="E" required>
+                Mundo mo
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="question">
+            <h3 data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">Question 3:</h3>
+            <p data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">Who painted the Mona Lisa?</p>
+            <div class="options">               
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q3" value="A" required>
+                Leonardo da Vinci
+              </label>              
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q3" value="B" required>
+                Vincent van Gogh
+              </label>              
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q3" value="C" required>
+                Pablo Picasso
+              </label>               
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q3" value="D" required>
+                Michelangelo
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="question">
+            <h3 data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">Question 4:</h3>
+            <p data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">The day before two days after the day before tomorrow is Saturday. What day is it today?</p>
+            <div class="options">                
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q4" value="A" required>
+                Thursday
+              </label>                  
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q4" value="B" required>
+                Wednesday
+              </label>                 
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q4" value="C" required>
+                Sunday
+              </label>                 
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q4" value="D" required>
+                Friday
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="question">
+            <h3 data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">Question 5:</h3>
+            <p data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700"><img class="image-question" src="img/puzzle.PNG"> </p>
+            <div class="options">                
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q5" value="A" required>
+                2
+              </label>                  
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q5" value="B" required>
+                4
+              </label>                 
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q5" value="C" required>
+                8
+              </label>                 
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q5" value="D" required>
+                0
+              </label>
+            </div>
+          </div>
+          
+          <!-- Question 6 -->
+          <div class="question">
+            <h3 data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">Question 6:</h3>
+            <p data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">They come out at night without being called and are lost in the day without being stolen. What are they?</p>
+            <div class="options">                
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q6" value="A" required>
+                Light
+              </label>                  
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q6" value="B" required>
+                Bats
+              </label>                 
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q6" value="C" required>
+                Stars
+              </label>                 
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q6" value="D" required>
+                Flights
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 7 -->
+          <div class="question">
+            <h3 data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">Question 7:</h3>
+            <p data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">What is always coming, but never arrives?</p>
+            <div class="options">                
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q7" value="A" required>
+                The future
+              </label>                  
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q7" value="B" required>
+                Dawn
+              </label>                 
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q7" value="C" required>
+                Tomorrow
+              </label>                 
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q7" value="D" required>
+                The answer
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 8 -->
+          <div class="question">
+            <h3 data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">Question 8:</h3>
+            <p data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">What can be broken, but is never held?</p>
+            <div class="options">                
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q8" value="A" required>
+                Silence
+              </label>                  
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q8" value="B" required>
+                A promise
+              </label>                 
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q8" value="C" required>
+                Trust
+              </label>                 
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q8" value="D" required>
+                Pagmamahal mo sa kanya
+              </label>
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q8" value="E" required>
+                All of the above
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 9 -->
+          <div class="question">
+            <h3 data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">Question 9:</h3>
+            <p data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?</p>
+            <div class="options">                
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q9" value="A" required>
+                Music
+              </label>                  
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q9" value="B" required>
+                Echo
+              </label>                 
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q9" value="C" required>
+                Dream
+              </label>                 
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q9" value="D" required>
+                Whisper
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 10 -->
+          <div class="question">
+            <h3 data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">Question 10:</h3>
+            <p data-aos="zoom-in" 
+            data-aos-easing="linear"
+            data-aos-duration="700">I have cities but no houses, forests but no trees, and rivers but no water. What am I?</p>
+            <div class="options">                
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q10" value="A" required>
+                Maze
+              </label>                  
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q10" value="B" required>
+                Globe
+              </label>                 
+              <label data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q10" value="C" required>
+                Map
+              </label>                 
+              <label data-aos="fade-left"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-sine">
+                <input type="radio"  name="q10" value="D" required>
+                Painting
+              </label>
+            </div>
+          </div>
+          <img src="img/kap.jpg" width="100%" style="border-radius: 30px;">
+          <p>HAHAHA</p>
+          <input type="submit" value="Submit" id="submitBtn">
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="quizgame.js"></script>
+
+    
+  </body>
+</html>
