@@ -25,6 +25,7 @@
             <p class="congrats">Congratulations!</p>
             <p class="score-result">You got <br> <span>0%</span> <br> Out of 100 <br> Great Job!</p> 
           </div>      
+          <a href="score-result.html">View Correct Answers</a>  
         </dialog>
     
       <h1 class="title" 
@@ -419,14 +420,7 @@
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      //pre-loader
-      window.addEventListener('load', function() {
-      AOS.init();
-      const loader = document.querySelector('.loader');
-      loader.classList.add('loader-hidden');
-    });
-    </script>
+    <script>AOS.init();</script>
     <script src="quizgame.js"></script>
    
   </body>
