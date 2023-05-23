@@ -201,6 +201,9 @@ input[type="radio"] {
   .modal a {
     font-size: 0.7rem; 
   }
+  .score-result span {
+      font-weight: 700;
+    }
 }
 
 
