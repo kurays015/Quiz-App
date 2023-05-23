@@ -128,14 +128,12 @@ input[type="radio"] {
 }
 .modal a {
   position: absolute;
+  left: 50%;
   bottom: 10px;        
   text-decoration: none;      
   font-size: 1rem;
   color: springgreen;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  transform: translate(-50%, -50%);  
 }
 .modal .modal-child {
   display: flex;
