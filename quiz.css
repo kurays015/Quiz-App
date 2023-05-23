@@ -126,6 +126,17 @@ input[type="radio"] {
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 
 }
+.modal a {
+  position: absolute;
+  bottom: 10px;        
+  text-decoration: none;      
+  font-size: 1rem;
+  color: springgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .modal .modal-child {
   display: flex;
   align-items: center;
@@ -186,6 +197,9 @@ input[type="radio"] {
   .congrats {
     font-size: 30px; 
     font-weight: 600;
+  }
+  .modal a {
+    font-size: 0.7rem; 
   }
 }
 
